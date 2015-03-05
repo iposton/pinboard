@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'devise', '~> 3.4.1'
+gem 'better_errors', '~>2.1.0'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
