@@ -14,6 +14,8 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem 'devise', '~> 3.4.1'
 gem 'better_errors', '~>2.1.0'
 gem 'paperclip', '~> 4.2.1'
+gem 'aws-sdk', '~> 2.0.29'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
