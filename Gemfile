@@ -15,6 +15,8 @@ gem 'devise', '~> 3.4.1'
 gem 'better_errors', '~>2.1.0'
 gem 'paperclip', '~> 4.2.1'
 gem 'aws-sdk', '< 2.0'
+gem 'jquery-turbolinks'
+gem 'masonry-rails', '~> 0.2.4'
 
 group :development, :test do
   gem 'byebug'
