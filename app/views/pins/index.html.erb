@@ -1,22 +1,29 @@
+<!-- if the user is not signed in show this partial -->
 <%= render '/home/jumbo' unless user_signed_in? %>
 <div id="pins" class="transitions-enabled">
-    <% @pins.each do |pin| %>
+  <% @pins.each do |pin| %>
     <div class="box">
       <div class="panel panel-default">
         <%= link_to image_tag(pin.image.url(:medium)), pin %><br/>
-           <div class="panel-body">
-             <%= pin.description %><br/>
-             <em><%= pin.user.name if pin.user %></em><br/>
-           </div>
-           <div class="panel-footer">
-            <% if pin.user == current_user %>
+          <div class="panel-body">
+            <%= pin.description %><br/>
+            <em><%= pin.user.name if pin.user %></em><br/>
+          </div><!-- panel body div end -->
+
+          <% if pin.user == current_user %>
+             <div class="panel-footer">
               <%= link_to 'Edit', edit_pin_path(pin) %>
               <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
-           <div>
-            <% end %>
-      </div>
-     </div>
-   <% end %>
+             </div><!-- panel footer div end -->
+          <% end %><!-- if pin user end -->
+
+      </div><!-- panel-default div end -->
+    </div><!-- box div end -->
+  <% end %><!-- end pins each do -->
+</div> <!-- end id pins div transitions-enabled div end -->
+
+<div class="center">
+<%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
 </div>
    
 
