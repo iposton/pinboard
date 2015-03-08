@@ -1,28 +1,35 @@
-== README
+== Pinboard 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Code Climate](https://codeclimate.com/github/iposton/pinboard/badges/gpa.svg)](https://codeclimate.com/github/iposton/pinboard)
 
-Things you may want to cover:
+Pinboard is a Ruby on Rails app. It's a photo sharing app. Upload your favorite photo and add a comment to it. When you adjust your broswer window screen size your photos will animate across the screen to reform position. 
 
-* Ruby version
+Pinboard runs on these technologies:
 
-* System dependencies
+* Rails 4.1.7 
 
-* Configuration
+* Ruby 2.1.3
 
-* Database creation
+* JQuery Masonry
 
-* Database initialization
+* Bootstrap 3.3.3
 
-* How to run the test suite
+* Heroku for deployment
 
-* Services (job queues, cache servers, search engines, etc.)
+* PostgrSQL
 
-* Deployment instructions
+* Code Climate
 
-* ...
+Gems Used in this App:
 
+* gem 'devise', '~> 3.4.1'
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* gem 'paperclip', '~> 4.2.1'
+
+* gem 'aws-sdk', '< 2.0'
+
+* gem 'masonry-rails', '~> 0.2.4'
+
+Deploying to heroku:
+push heroku master
+<tt>heroku run rake db:migrate</tt>.
