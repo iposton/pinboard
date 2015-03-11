@@ -1,4 +1,4 @@
-== Pinboard 
+<h1>Pinboard</h1> 
 
 [![Code Climate](https://codeclimate.com/github/iposton/pinboard/badges/gpa.svg)](https://codeclimate.com/github/iposton/pinboard)
 
